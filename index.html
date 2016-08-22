@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>Jeff Kristian Full Stack Web Developement</title>
+    <link rel= 'stylesheet' type= 'text/css' href= "../static/portfoliosite/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="../static/portfoliosite/js/parallax/parallax.js'"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $.fn.scrollBottom = function() {
+        return $(document).height() - this.scrollTop() - this.height();
+      };
+        var selfswap = function(){
+          var $this = $(this);
+          var artSelf = $this.data('alt-src');
+          $this.data('alt-src', $this.attr('src'));
+          $this.attr('src', artSelf);
+        }
+        $(function() {
+        $('#selfie, #codesnip, #codesnip2').hover(selfswap, selfswap);
+            });
+            $('#selfie').hover(function(){
+              $('#bottomlogo').text('Artist');
+            });
+            $('#selfie').mouseout(function(){
+              $('#bottomlogo').html('');
+            });
+            $('#port').click(function(){
+              $('html, body').animate({
+                scrollTop: $("iframe").offset().top},2000);
+            })
+            $('#devport').click(function(){
+              $('html, body').animate({
+                scrollTop: $("#codesnip").offset().top},2000);
+            })
+    });
+
+    </script>
+  </head>
+<body>
+  <div id= "overlay"></div>
+  <div id="backgroundtop"></div>
+  <div class="parallax-window" data-parallax="scroll" data-image-src="../static/portfoliosite/img/code.jpg'"></div>
+    <div id= "container" class="container-fluid">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id= "logo" class="navbar-brand" href="/">Jeffrey K Morris</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li ><a href="/">Home</a></li>
+              <li  ><a id="port" href="#">Art Portfolio</a></li>
+              <li  ><a id="devport" href="#">Dev Portfolio</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="gitlogo"><a href="https://github.com/Jekrimo"><img class= "gitlogo" src = "../static/portfoliosite/img/github.png" width= "55px"></a></li>
+              <li class="gitlogo"><a href="https://www.linkedin.com/in/jeffrey-morris-2417a177"><img class= "gitlogo" src = "../static/portfoliosite/img/linkedin.png" width= "20px"></a></li>
+                  <li><a  href="/resume"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+                  <li><a  href="mailto:j.kristian.morris@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 id= "toplogo" data-hover= "Artist">Web Developer</h1>
+        <div id= "top-images">
+          <img id="selfie" src = "../static/portfoliosite/img/selfie.jpg" data-alt-src= "../static/portfoliosite/img/selfie2.jpg" height = 500>
+          <!-- <img id="selfie" src = " {% static 'portfoliosite/img/selfie2.jpg' %}"> -->
+      </div>
+      <div id= "bottomlogo"><h2></h2></div>
+        <div id= "midexplain">
+          </div>
+          <div id="frame">
+          <iframe src="http://jekrimo.blogspot.com/p/portfolio-fun-drop.html" width= "100%" height="400px"></iframe>
+        </div>
+        <h4></h4>
+        <img id="codesnip" src = "../static/portfoliosite/img/userdash.jpg" data-alt-src= "../static/../static/portfoliosite/img/dashboard.jpg">
+        <img id="codesnip2" src = "../static/portfoliosite/img/pokecode.jpg" data-alt-src= "../static/portfoliosite/img/pokedex.jpg">
+
+        <!-- <div id="frame">
+        <iframe src="http://jekrimo.blogspot.com/p/concept-art.html" width= "100%" height="400px"></iframe>
+
+      </div> -->
+
+    </div>
+    <div id= "bottom">
+
+    </div>
+      <div id="backgroundtopish"></div>
+        <div id= "dorp"></div>
+        <div id= "backtech">
+        </div>
+        <div id= "backtech2">
+        </div>
+        <div id= "backtech3">
+        </div>
+          <div id= "buttons">
+            <h4>Python</h4>
+              <h4>Django</h4>
+                <h4>SQL</h4>
+              <h4>OOP</h4>
+            <h4>Bootstrap</h4>
+          <h4>Gity</h4>
+          <h4>MCV</h4>
+        <h4>REST</h4>
+        </div>
+        <div id= "buttons2">
+          <h4>Java<br>Script</h4>
+            <h4>Ajax</h4>
+          <h4>API</h4>
+        <h4>CSS</h4>
+      <h4>HTML</h4>
+    </div>
+    <div id= "buttons3">
+      <h4>Photoshop</h4>
+        <h4>Design</h4>
+          <h4>Illustration</h4>
+  </div>
+    <div id= "foot">
+      <ul>
+        <li><a href="/resume"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+        <li><span class="glyphicon glyphicon-copyright-mark"></span>Jeff k Morris</li>
+        <li><a href="mailto:j.kristian.morris@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
