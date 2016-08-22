@@ -1,0 +1,101 @@
+#container{
+  height: 2000px;
+  padding: 10px;
+  width: auto;
+
+
+}
+#logo{
+  color: white;
+  text-shadow: 0 0 10px white;
+  font-size: 34px;
+}
+
+#toplogo{
+  margin-top: 100px;
+  font-size: 3.7em;
+  left: 32%;
+  position: absolute;
+  font-weight: lighter;
+  font-family: monospace;
+  text-shadow: 0 0 20px white;
+  color: white;
+  font-kerning: auto;
+}
+#backgroundtop{
+  background-image: url("../../static/portfoliosite/img/topback.png");
+  height: 2500px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  z-index: -1;
+  border-bottom: 3px solid white;
+}
+#backgroundtopish{
+  background-image: url("../../static/portfoliosite/img/background.png");
+  height: 2450px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  z-index: -1;
+  border-top: 5px solid white;
+  position: absolute;
+}
+.btn{
+  margin-left: 55px;
+  margin-top: 100px;
+  position: fixed;
+}
+.navbar{
+  width: auto;
+}
+#menu-item{
+  font-style: none;
+  list-style-type: none;
+}
+
+.navbar-brand{
+  font-size: 12px;
+  position: absolute;
+  left: 40%;
+  text-align: center;
+  font-family: Rockwell;
+  font-size: 26px;
+  color: lightblue;
+}
+#logo{
+  color: white;
+  font-size: 34px;
+}
+#background {
+  position: absolute;
+  margin-top: : 100px;
+  margin-left: 15%;
+  width: 70%;
+}
+object{
+  width: 100%;
+}
+
+#foot{
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  width: 100%;
+  left: 1%;
+  margin-top: 200px;
+  font-family: monospace;
+  font-weight: lighter;
+  position: absolute;
+}
+
+#foot li{
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+  margin-left: 75px;
+  font-size: 2.5em;
+  font-family: monospace;
+  font-weight: lighter;
+}
