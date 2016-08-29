@@ -270,6 +270,17 @@
     z-index: -1;
     position: absolute;
   }
+  #trythis .parallax-window {
+    margin-top: 5%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+  }
+  #art_info{
+    color: black;
+    font-weight: bold;
+  }
   #contact{
     margin-left: 30px;
     margin-top: 20px;
@@ -319,6 +330,9 @@
     margin-top: 0%;
     margin-left: 58rem;
     position: absolute;
+    color: white;
+  }
+  #art_info{
     color: white;
   }
   #self{
