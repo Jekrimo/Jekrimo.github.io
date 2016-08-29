@@ -54,7 +54,7 @@
 }
 #contact{
   width: 80%;
-  margin-left: 35rem;
+  margin-left: 5%;
   margin-top: 15px;
 }
 
@@ -196,9 +196,7 @@
     background: transparent;
     position: absolute;
   }
-  #trythis .parallax-window data-image-src{
-    width: 100%;
-  }
+
   #art_info p{
     margin-left: -10px;
   }
@@ -248,7 +246,7 @@
   }
   #toplogo{
     margin-top: 16%;
-    margin-left: 4rem;
+    margin-left: 5rem;
     color: white;
   }
   #bottomlogo{
@@ -296,6 +294,11 @@
   }
 }
 @media (min-width: 1000px) {
+  #contact{
+    margin-left: 5%;
+    max-width: 1200px;
+
+  }
   .parallax-window{
     border-top: 3px solid white;
     margin-top: 5%;
