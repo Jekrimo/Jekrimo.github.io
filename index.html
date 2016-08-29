@@ -1,57 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Jeff Kristian Morris Full Stack Web Developement</title>
-    <link rel= 'stylesheet' type= 'text/css' href= "index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
 
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Jeff Kristian Morris Full Stack Web Developement</title>
+<link rel= 'stylesheet' type= 'text/css' href= "css/index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="skeleton.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="static/portfoliosite/js/parallax/parallax.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $.fn.scrollBottom = function() {
-        return $(document).height() - this.scrollTop() - this.height();
-      };
-        var selfswap = function(){
-          var $this = $(this);
-          var artSelf = $this.data('alt-src');
-          $this.data('alt-src', $this.attr('src'));
-          $this.attr('src', artSelf);
-        }
-        $(function() {
-        $('#selfie, #codesnip, #codesnip2').hover(selfswap, selfswap);
-            });
-            $('#selfie').hover(function(){
-              $('#bottomlogo').text('Artist');
-            });
-            $('#selfie').mouseout(function(){
-              $('#bottomlogo').html('');
-            });
-            $('#port').click(function(){
-              $('html, body').animate({
-                scrollTop: $("iframe").offset().top},2000);
-            })
-            $('#devport').click(function(){
-              $('html, body').animate({
-                scrollTop: $("#codesnip").offset().top},2000);
-            })
-    });
-    </script>
-  </head>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="parallax/parallax.js"></script>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<script src="js/kwik/jquery.flexslider-min.js"></script>
+
+<script src="js/kwik/css3-mediaqueries.js"></script>
+<link rel="stylesheet" href="js/kwik/default.css" type="text/css" media="screen" />
+<!-- Kwiks pieces -->
+<script src="js/kwik/kwiks.js"></script>
+
+</head>
 <body>
-  <div id= "overlay"></div>
-  <div id="backgroundtop"></div>
-  <div class="parallax-window" data-parallax="scroll" data-image-src="code.jpg"></div>
-    <div id= "container" class="container-fluid">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -64,72 +44,267 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li ><a href="/">Home</a></li>
-              <li  ><a id="port" href="#">Art Portfolio</a></li>
-              <li  ><a id="devport" href="#">Dev Portfolio</a></li>
+              <li><a id="port" href="#">Art Portfolio</a></li>
+              <li><a id="devport" href="#">Dev Portfolio</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li class="gitlogo"><a href="https://github.com/Jekrimo"><img class= "gitlogo" src = "github.png" width= "55px"></a></li>
-              <li class="gitlogo"><a href="https://www.linkedin.com/in/jeffrey-morris-2417a177"><img class= "gitlogo" src = "linkedin.png" width= "20px"></a></li>
-                  <li><a  href="/show.html"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
-                  <li><a  href="mailto:j.kristian.morris@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+              <li class="gitlogo"><a href="https://github.com/Jekrimo"><img class= "gitlogo" src = "images/github.png" width= "55px"></a></li>
+              <li class="gitlogo"><a href="https://www.linkedin.com/in/jeffrey-morris-2417a177"><img class= "gitlogo" src = "images/linkedin.png" width= "20px"></a></li>
+                  <li><a  href="images/resume.pdf" download><span class="glyphicon glyphicon-file"></span> Resume</a></li>
+                  <li ><a class="contact" href="mailto:j.kristian.morris@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      <h1 id= "toplogo" data-hover= "Artist">Web Developer</h1>
-        <div id= "top-images">
-          <img id="selfie" src ="self.jpg" data-alt-src= "selfie2.jpg" height = 500>
-          <!-- <img id="selfie" src = " {% static 'portfoliosite/img/selfie2.jpg' %}"> -->
-      </div>
-      <div id= "bottomlogo"><h2></h2></div>
-        <div id= "midexplain">
-          </div>
-          <div id="frame">
-          <iframe src="https://jekrimo.blogspot.com/p/portfolio-fun-drop.html" width= "100%" height="400px"  sandbox></iframe>
-        </div>
-        <h4></h4>
-        <img id="codesnip" src = "userdash.jpg" data-alt-src= "dashboard.jpg">
-        <img id="codesnip2" src = "pokecode.jpg" data-alt-src= "pokedex.jpg">
-    </div>
-    <div id= "bottom">
-    </div>
-      <div id="backgroundtopish"></div>
-        <div id= "dorp"></div>
-        <div id= "backtech">
-        </div>
-        <div id= "backtech2">
-        </div>
-        <div id= "backtech3">
-        </div>
-          <div id= "buttons">
-            <h4>Python</h4>
-              <h4>Django</h4>
-                <h4>SQL</h4>
-              <h4>OOP</h4>
-            <h4>Bootstrap</h4>
-          <h4>Git</h4>
-          <h4>MCV</h4>
-        <h4>REST</h4>
-        </div>
-        <div id= "buttons2">
-          <h4>Java<br>Script</h4>
-            <h4>Ajax</h4>
-          <h4>API</h4>
-        <h4>CSS</h4>
-      <h4>HTML</h4>
-    </div>
-    <div id= "buttons3">
-      <h4>Photoshop</h4>
-        <h4>Design</h4>
-          <h4>Illustration</h4>
+      <div class="row">
+    <div class="one column"></div>
+    <div class="eleven columns"><h1 id= "toplogo" data-hover= "Artist">Web Developer</h1></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="images/code.jpg"></div>
   </div>
-    <div id= "foot">
-      <ul>
-        <li><a href="/resume"><span class="glyphicon glyphicon-file"></span> Resume</a></li>
-        <li><span class="glyphicon glyphicon-copyright-mark"></span>Jeff k Morris</li>
-        <li><a href="mailto:j.kristian.morris@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-      </ul>
+    <div class="one-half column" style="margin-top: 2%">
+      <div id= "top">
+        <img id="self" src ="images/Selfie.jpg" data-alt-src= "images/selfie2.jpg">
     </div>
-  </body>
+    </div>
+        <div class="eleven columns"><h1 id= "bottomlogo" data-hover= "Artist">Artist</h1></div>
+      </div>
+      <div id= "basic"></div>
+      <div id= "basic_info" class="row">
+      <div class="ten columns">
+       <h4>Apart From The Ordinary</h4>
+       <p>I am an artist with over 10 years of formal art, illustration and design training. With the same dedication to an epic painting I believe that programming should not only be beautiful on the front end but that most of the beauty happens under the hood,
+         in the code, whether it be for a methodically designed landing page, an amazingly fast back end database, or a fantasticaly wonderful algorythm.
+          </p>
+      </div>
+      </div>
+      <div class= "bar"></div>
+      <div class= "bar2"></div>
+      <div class="row">
+    <div class="two-thirds column"><img id="codesnip" src ="images/pokecode.jpg" data-alt-src= "images/pokedex.jpg" width= "100%"></div>
+    <div class="one-third column">
+      <div class= "tech">
+        <p>Technologies used:</p>
+        <h6>Ajax</h6>
+        <h6>JavaScript</h6>
+        <h6>JQuery</h6>
+        <h6>Css</h6>
+        <h6>API</h6>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="two-thirds column"><img id="codesnip3" src ="images/thewall.jpg" data-alt-src= "images/wallopen.jpg" width= "100%"></div>
+      <div class="one-third column">
+        <div class= "tech">
+          <p>Technologies used:</p>
+          <h6>Flask</h6>
+          <h6>MySQL</h6>
+          <h6>Python</h6>
+          <h6>Jinja2</h6>
+        </div>
+      </div>
+    </div>
+    <div class= "row">
+      <div class="two-thirds column"><img id="codesnip2" src ="images/userdash.jpg" data-alt-src= "images/dashboard.jpg" width= "100%"></div>
+        <div class="one-third column">
+          <div class= "tech">
+          <p>Technologies used:</p>
+            <h6>Python</h6>
+            <h6>Django</h6>
+            <h6>Bootstrap</h6>
+            <h6>MVC</h6>
+            <h6>RESTful Routes</h6>
+            <h6>CRUD Operations</h6>
+            <h6>Amazon Web <br>Services</h6>
+          </div>
+        </div>
+      </div><!-- End of row2 -->
+      <!-- <img id="moon" src ="images/moon.png"> -->
+      <div id= "arts"></div>
+        <div id= "art_info" class="row">
+          <div class="ten columns">
+           <h4>The Devil Is In The Details</h4>
+               <p>Programming and art go hand in hand. The great master artists of the 15th century were not only amazing painters but many, like Da Vinci, were also brilliant mathematicians. Surely if they were alive today they would be as obsessed with
+                 coding as I am. Hopefully in fourty years I'll scratch the surface of their genious.<br>
+                 <br>
+                 Art will always be my first love whether I'm using Photoshop, oil paints, or a good old paper and pencil to create nerdy things like elves, dwarves, or some creepy things to go up against them.
+                </p>
+          </div>
+        </div>
+
+        <div class="row">
+      <div class="one column"></div>
+      <div class="eleven columns"></div>
+      <div id= "trythis">
+      <div class="parallax-window parallax-container" data-parallax="scroll" data-image-src="images/para2.jpg"></div>
+    </div>
+  </div>
+      <div class= "row">
+        <div id= "slidingframes">
+        <div class= "eleven columns">
+          <div class="flexslider">
+      			<ul class="slides">
+      				<li>
+      					<img src="images/art/2.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/2a.jpg" />
+      				</li>
+      				<li>
+      					<a href="#"><img src="images/art/1.jpg" /></a>
+      				</li>
+      				<li>
+      					<img src="images/art/3.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/5.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/6.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/7.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/8.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/9.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/10.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/13.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/11.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/12.jpg" />
+      				</li>
+              <li>
+      					<img src="images/art/12a.jpg" >
+      				</li>
+              <li>
+      					<img class= "imgmover" src="images/art/4.jpg" />
+      				</li>
+      			</ul>
+      	  </div>
+      	</div>
+    	<span id="responsiveFlag"></span>
+        </div>
+    </div>
+</div>
+<form action="https://formspree.io/j.kristian.morris@gmail.com" method="POST">
+  <div id= "contact" class="row">
+    <div class="six columns">
+      <label for="exampleEmailInput">Your email</label>
+      <input class="u-full-width" name="_replyto" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+    </div>
+    <div class="six columns">
+      <label for="exampleRecipientInput">Reason for contacting</label>
+      <select name= "_subject" class="u-full-width" id="exampleRecipientInput">
+        <option value="Option 1">Questions</option>
+        <option value="Option 2">Art</option>
+        <option value="Option 3">Developement</option>
+        <option value="Option 3">Other</option>
+      </select>
+    </div>
+
+  <label for="exampleMessage">Message</label>
+  <textarea name="message" class="u-full-width" placeholder="Hi Jeff …" id="exampleMessage"></textarea>
+  <input class="button-primary" type="submit" value="Submit">
+  <input type="hidden" name="_next" value="thanks.html" />
+  <input type="text" name="_gotcha" style="display:none" />
+    </div>
+</form>
+
+  <div class= "row">
+    <div id= "footer">
+    <div class="two-thirds column"><ul><li><span class="glyphicon glyphicon-copyright-mark"></span>Jeff k Morris</li></ul></div>
+      <div class="one-third column"></div>
+    </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $.fn.scrollBottom = function() {
+    return $(document).height() - this.scrollTop() - this.height();
+  };
+    var selfswap = function(){
+      var $this = $(this);
+      var artSelf = $this.data('alt-src');
+      $this.data('alt-src', $this.attr('src'));
+      $this.attr('src', artSelf);
+    }
+    $(function() {
+    $('#self, #codesnip, #codesnip2, #codesnip3').hover(selfswap, selfswap);
+        });
+        $('#port').click(function(){
+          $('html, body').animate({
+            scrollTop: $("#arts").offset().top},2000);
+        })
+        $('#devport').click(function(){
+          $('html, body').animate({
+            scrollTop: $("#basic").offset().top},2000);
+        })
+        $('.contact').click(function(){
+          $('html, body').animate({
+            scrollTop: $("#responsiveFlag").offset().top},2000);
+        })
+});
+  </script>
+  <script type="text/javascript">
+		var Main = Main || {};
+
+		jQuery(window).load(function() {
+			window.responsiveFlag = jQuery('#responsiveFlag').css('display');
+			Main.gallery = new Gallery();
+
+			jQuery(window).resize(function() {
+				Main.gallery.update();
+			});
+		});
+
+		function Gallery(){
+			var self = this,
+				container = jQuery('.flexslider'),
+				clone = container.clone( false );
+
+			this.init = function (){
+				if( responsiveFlag == 'block' ){
+					var slides = container.find('.slides');
+
+					slides.kwicks({
+						max : 500,
+						spacing : 0
+					}).find('li > a').click(function (){
+						return false;
+					});
+				} else {
+					container.flexslider();
+				}
+			}
+			this.update = function () {
+				var currentState = jQuery('#responsiveFlag').css('display');
+
+				if(responsiveFlag != currentState) {
+
+					responsiveFlag = currentState;
+					container.replaceWith(clone);
+					container = clone;
+					clone = container.clone( false );
+
+					this.init();
+				}
+			}
+
+			this.init();
+		}
+	</script>
+</body>
 </html>

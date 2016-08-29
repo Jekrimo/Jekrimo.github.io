@@ -1,0 +1,333 @@
+#thanksback{
+  background-color: black;
+  opacity: 0.9;
+  width: 1200px;
+  height: 800px;
+  margin-left: -300px;
+  position: absolute;
+}
+#logo{
+  color: white;
+  font-family: fantasy;
+}
+#thanksimg h1{
+  margin-left: 30px;
+  position: absolute;
+  margin-top: 630px;
+  z-index: 2;
+  color: white;
+
+}
+#thanksimg a{
+  margin-left: 80px;
+  position: absolute;
+  margin-top: 160px;
+  z-index: 2;
+
+}
+#thanksimg img{
+  margin-top: 130px;
+  width: 600px;
+  z-index: 1;
+  position: absolute;
+}
+#thanksback h1{
+  color: black;
+
+  margin-top: 200px;
+  margin-left: 200px;
+}
+#footer{
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100px;
+  margin-top: 20px;
+}
+#footer ul{
+  margin-left: 20%;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  margin-top: 5%;
+  font-size: 1em;
+}
+#contact{
+  width: 80%;
+  margin-left: 15rem;
+  margin-top: 15px;
+}
+
+#self{
+  max-width: 100%;
+  border-radius: 10px;
+  z-index: 2;
+}
+#slidingframes{
+  border-radius: 5px;
+  margin-top: 70rem;
+  width: 100%;
+}
+.slides img{
+  max-height: 500px;
+  max-width: 300px;
+  border-radius: 5px;
+}
+#codesnip{
+  border-radius: 10px;
+}
+#codesnip2{
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#codesnip3{
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#art_info h4{
+  margin-left: 30%;
+}
+
+#art_info{
+  color: white;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  margin-top: 14rem;
+  margin-left: 2rem;
+}
+#trythis .parallax-window {
+  margin-top: 5%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+}
+.parallax-window{
+  border-top: 3px solid white;
+  margin-top: 5%;
+  min-height: 600px;
+  background: transparent;
+  width: 100%;
+  position: absolute;
+}
+#basic_info{
+  margin-top: 10rem;
+  align-items: center;
+}
+.bar{
+  height: 70%;
+  width: 10%;
+  background-color: grey;
+  opacity: 0.3;
+  position: fixed;
+  margin-top: -100rem;
+  z-index: -1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.bar2{
+  height: 70%;
+  width: 10%;
+  background-color: grey;
+  opacity: 0.3;
+  position: fixed;
+  margin-top: -100rem;
+  margin-left: 70%;
+  z-index: -1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.tech{
+  margin-top: 15px;
+  margin-left: 4.5rem;
+}
+.tech p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+@media (max-width: 550px){
+  #footer{
+    margin-top: 10rem;
+  }
+  #contact{
+    margin-top: 125rem;
+  }
+  #slidingframes{
+    position: absolute;
+  }
+  #thanksimg h1{
+  margin-left: 20px;
+  position: absolute;
+  margin-top: 430px;
+  z-index: 2;
+  color: white;
+}
+  #thanksimg img{
+    margin-top: 130px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  #thanksback{
+    background-color: black;
+    opacity: 0.9;
+    width: 360px;
+    margin-left: 10px;
+    height: 800px;
+    position: absolute;
+  }
+  #contact{
+    width: 80%;
+    margin-left: 1rem;
+  }
+  #art_info{
+    width: 80%;
+    height: 50%;
+  }
+  #trythis .parallax-window {
+    margin-top: 5%;
+    width: 100%;
+    min-height: 600px;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+  }
+  #art_info p{
+    margin-left: -10px;
+  }
+  #art_info h4{
+    margin-left: -10px;
+  }
+
+  .slides img{
+    margin-left: 5px;
+  }
+  .parallax-window{
+    border-top: 3px solid white;
+    margin-top: -5%;
+    min-height: 600px;
+    background: transparent;
+    width: 110%;
+    position: absolute;
+  }
+  .bar{
+    height: 70%;
+    width: 10%;
+    background-color: grey;
+    opacity: 0.3;
+    position: fixed;
+    margin-top: -105rem;
+
+  }
+  .bar2{
+    height: 70%;
+    width: 10%;
+    background-color: grey;
+    opacity: 0.3;
+    position: fixed;
+    margin-top: -105rem;
+    margin-left: 70%;
+    z-index: -1;
+  }
+  #codesnip{
+    margin-bottom: 15px;
+  }
+  #self{
+    max-width: 100%;
+    left: 10%;
+    z-index: 2;
+  }
+  #toplogo{
+    margin-top: 16%;
+    margin-left: 4rem;
+    color: white;
+  }
+  #bottomlogo{
+    margin-left: 13rem;
+    max-width: 100%;
+    color: white;
+  }
+  #basic_info h4{
+    margin-left: 5rem;
+  }
+
+}
+
+@media (min-width: 550px) {
+  .parallax-window{
+    border-top: 3px solid white;
+    margin-top: 5%;
+    min-height: 600px;
+    background: transparent;
+    width: 110%;
+    position: absolute;
+  }
+  #toplogo{
+    margin-left: 10rem;
+    max-width: 100%;
+    margin-top: 10rem;
+    color: white;
+  }
+  #bottomlogo{
+    margin-left: 17rem;
+    max-width: 100%;
+    color: white;
+  }
+  #self{
+    margin-left: 10rem;
+    max-width: 100%;
+  }
+  #basic_info h4{
+    margin-left: 15rem;
+  }
+}
+@media (min-width: 1000px) {
+  .parallax-window{
+    border-top: 3px solid white;
+    margin-top: 5%;
+    min-height: 600px;
+    background: transparent;
+    width: 100%;
+    position: absolute;
+  }
+  #toplogo{
+    float: inherit;
+    margin-top: 57rem;
+    margin-left: 2rem;
+    color: white;
+    position: absolute;
+  }
+  #bottomlogo{
+    float: inherit;
+    margin-top: 0%;
+    margin-left: 58rem;
+    position: absolute;
+    color: white;
+  }
+  #self{
+    margin-left: 15rem;
+    margin-top: 8rem;
+  }
+  #basic_info h4{
+    margin-left: 28rem;
+    margin-top: 1rem;
+  }
+  #basic_info p{
+    margin-left: 5rem;
+    align-items: center;
+  }
+  .bar2{
+    height: 70%;
+    background-color: grey;
+    opacity: 0.3;
+    position: fixed;
+    margin-top: -100rem;
+    margin-left: 70rem;
+    max-width: 400px;
+    z-index: -1;
+  }
+  #slidingframes{
+    margin-left: 4rem;
+  }
+}
