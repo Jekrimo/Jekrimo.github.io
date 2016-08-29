@@ -182,6 +182,8 @@
     margin-left: 1rem;
   }
   #art_info{
+    font-weight: bold;
+    color: black;
     width: 80%;
     height: 50%;
   }
@@ -190,8 +192,11 @@
     width: 100%;
     min-height: 600px;
     background-color: black;
-    opacity: 0.6;
+    background: transparent;
     position: absolute;
+  }
+  #trythis .parallax-window data-image-src{
+    width: 100%;
   }
   #art_info p{
     margin-left: -10px;
@@ -204,11 +209,13 @@
     margin-left: 5px;
   }
   .parallax-window{
+    visibility: visible;
     border-top: 3px solid white;
     margin-top: -5%;
     min-height: 600px;
     background: transparent;
     width: 110%;
+    z-index: -1;
     position: absolute;
   }
   .bar{
@@ -261,7 +268,12 @@
     min-height: 600px;
     background: transparent;
     width: 110%;
+    z-index: -1;
     position: absolute;
+  }
+  #contact{
+    margin-left: 30px;
+    margin-top: 20px;
   }
   #toplogo{
     margin-left: 10rem;
