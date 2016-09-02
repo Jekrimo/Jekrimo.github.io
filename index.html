@@ -19,8 +19,8 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <script src="parallax/parallax.js"></script>
 <link rel="icon" type="image/png" href="images/favicon.png">
 <script src="js/kwik/jquery.flexslider-min.js"></script>
-
 <script src="js/kwik/css3-mediaqueries.js"></script>
+<script src="js/stick.js"></script>
 <link rel="stylesheet" href="js/kwik/default.css" type="text/css" media="screen" />
 <!-- Kwiks pieces -->
 <script src="js/kwik/kwiks.js"></script>
@@ -56,6 +56,7 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
           </div>
         </div>
       </nav>
+
       <div class="row">
     <div class="one column"></div>
     <div class="eleven columns"><h1 id= "toplogo" data-hover= "Artist">Web Developer</h1></div>
@@ -77,8 +78,10 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
           </p>
       </div>
       </div>
-      <div class= "bar"></div>
-      <div class= "bar2"></div>
+      <div id= "parents">
+      <div id= "bar"></div>
+      <div id= "bar2"></div>
+    </div>
       <div class="row">
     <div class="two-thirds column"><img id="codesnip" src ="images/pokecode.jpg" data-alt-src= "images/pokedex.jpg" width= "100%"></div>
     <div class="one-third column">
@@ -196,6 +199,18 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
         </div>
     </div>
 </div>
+
+
+  <div class="row">
+    <div id= "contact_words">
+    <div class="twelve columns">
+      <h3>Drop me a line! </h3>
+      <p>Whether you want to say hi, ask a question, or be a troll,
+        I would love to hear from you!</p>
+    </div>
+  </div>
+</div>
+
 <form action="https://formspree.io/j.kristian.morris@gmail.com" method="POST">
   <div id= "contact" class="row">
     <div class="six columns">
@@ -231,6 +246,7 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script type="text/javascript">
+
   $(document).ready(function(){
     $.fn.scrollBottom = function() {
     return $(document).height() - this.scrollTop() - this.height();
@@ -256,9 +272,11 @@ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh
           $('html, body').animate({
             scrollTop: $("#responsiveFlag").offset().top},2000);
         })
+
 });
   </script>
   <script type="text/javascript">
+
 		var Main = Main || {};
 
 		jQuery(window).load(function() {
