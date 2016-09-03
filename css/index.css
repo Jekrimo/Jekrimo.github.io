@@ -86,9 +86,9 @@
   z-index: 1;
   position: absolute;
 }
+
 #thanksback h1{
   color: black;
-
   margin-top: 200px;
   margin-left: 200px;
 }
@@ -96,6 +96,7 @@
   background-color: black;
   opacity: 0.8;
   width: 100%;
+  margin-left: 1px;
   height: 100px;
   margin-top: 20px;
 }
@@ -122,6 +123,20 @@
   border-radius: 5px;
   margin-top: 70rem;
   width: 100%;
+}
+.footimg1{
+  position: absolute;
+  width: 40px;
+  margin-top: -65px;
+  margin-left: 30rem;
+  height: 40px;
+}
+.footimg2{
+  position: absolute;
+  width: 40px;
+  margin-top: -65px;
+  margin-left: 35rem;
+  height: 40px;
 }
 .slides img{
   max-height: 500px;
